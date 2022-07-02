@@ -1,0 +1,58 @@
+####################################################
+###################### STEP 1 ######################
+####################################################
+
+R-URL: https://api.qiwi.com/partner/bill/v1/bills/WhiteApfel-PyQiwiP2P-28058890-910
+URL: https://api.qiwi.com/partner/bill/v1/bills/WhiteApfel-PyQiwiP2P-28058890-910
+Code: 400 Bad Request
+Method: PUT
+
+##################### REQUEST ######################
+Headers:
+
+Host:           api.qiwi.com
+Accept-Encoding: gzip, deflate
+Connection:     keep-alive
+User-Agent:     python-httpx/0.23.0
+Accept:         application/json
+Content-Type:   application/json
+Authorization:  Bearer eyJ2ZXJzaW9uIjoiUDJQIiwiZGF0YSI6eyJwYXlpbl9tZXJjaGFudF9zaXRlX3VpZCI6IjJtZGF1ai0wMCIsInVzZXJfaWQiOiI3OTAxNDM0ODM4OCIsInNlY3JldCI6ImExZWZkYzQ1ODBlY2M0ZTc2NWZhZDk1NjUyZDM1ZmJlY2JlMjA0MTcxZWU1NjI1N2UxZDI3OTQ4YjY4YmQ0MWUifX0=
+Content-Length: 167
+
+########### CONTENT ############
+{
+    "amount": {
+        "currency": "RUB",
+        "value": "123.00"
+    },
+    "comment": "2087980423_1609",
+    "customFields": {},
+    "customer": {},
+    "expirationDateTime": "2022-06-15T11:10:48+03:00"
+}
+######### END CONTENT ##########
+
+##################### RESPONSE #####################
+
+Headers:
+
+Server:         nginx
+Date:           Wed, 15 Jun 2022 08:11:36 GMT
+Content-Type:   application/json
+Content-Length: 349
+Connection:     keep-alive
+Cache-Control:  no-cache, no-store
+X-B3-SpanId:    98418dd15a1fcc06
+X-B3-SpanId:    2b5c245cae5764da
+X-Edge-Proxied-Response: true
+Expires:        Thu, 01 Jan 1970 00:00:00 GMT
+X-B3-ParentSpanId: c5eeff5563aac441
+X-B3-TraceId:   0e644fd2a102e131
+content-encoding: gzip
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+
+########### CONTENT ############
+{"serviceName":"payin-invoicing-api","errorCode":"validation.error","description":"Неверные параметры, измените запрос согласно документации API; Cause: unknown","userMessage":"Неверные параметры, измените запрос согласно документации API; Cause: unknown","dateTime":"2022-06-15T11:11:36.632+03:00","traceId":"0e644fd2a102e131","cause":{"expirationDateTime":["должно содержать дату, которая еще не наступила"]}}
+######### END CONTENT ##########
+

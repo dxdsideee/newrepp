@@ -1,0 +1,5 @@
+cmd
+ssh root@185.180.231.143
+cd /home/bot
+python3.8 bot.py
+855429
